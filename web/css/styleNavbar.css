@@ -1,0 +1,49 @@
+@media (max-width: 992px) {
+    .navbar-collapse {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 0 0 20px 20px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        transform: translateY(3px);
+    }
+    li {
+        padding-left: 20px;
+    }
+    li form {
+        transform: translateX(-12px);
+    }
+}
+.dark-theme .btn-light {
+    --bs-btn-color: #f8f9fa;
+    --bs-btn-bg: #212529;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #fff;
+}
+#mainNav {
+    min-height: 65.6px;
+    padding: 8px 0;
+}
+#theme-toggle {
+    min-height: 49.6px;
+    min-width: 49.6px;
+}
+.navbar-collapse .btn {
+    transform: translateY(-3px);
+}
+.navbar-toggler {
+    min-height: 49.6px;
+}
+@media (min-width: 993px) {
+    #navbarResponsive {
+        min-height: 49.6px;
+    }
+    #navbarResponsive li {
+        min-height: 49.6px;
+        padding-top: 4.8px;
+    }
+    #navbarResponsive .btn {
+        min-height: 49.6px;
+    }
+}

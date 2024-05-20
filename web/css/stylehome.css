@@ -1,0 +1,51 @@
+  * {
+    transition: all .25s ease-out;
+  }
+  #color-shifting:hover {
+    animation: colorShift 10s ease-in-out infinite;
+  }
+  @keyframes colorShift {
+    0%, 100% {
+      color: inherit;
+    }
+    25% {
+      color: #4E82EE;
+    }
+    50% {
+      color: #A96FB7;
+    }
+    75% {
+      color: #D36679;
+    }
+  }
+  header.masthead {
+    animation: bgAnimation 16s ease-in-out infinite;
+  }
+  @keyframes bgAnimation {
+    0%,100% {
+      background-image: url("../assets/img/intel.jpg");
+      background-size: 50vw 100%;
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+    33% {
+      background-image: url("../assets/img/nvidia.jpg");
+      background-size: 50vw 100%;
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+    66% {
+      background-image: url("../assets/img/amd.jpg");
+      background-size: 50vw 100%;
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+  }
+  header.masthead:before {
+    background: linear-gradient(
+          to left,
+          transparent 0%,
+          transparent 25%,
+          black 50%
+        );
+  }
